@@ -288,7 +288,7 @@
   )
 
   (module "MBv3 enclosures:1590BB" (layer F.Cu) (tedit 5B97D574) (tstamp 5FBDEE12)
-    (at 100 100 90)
+    (at 100 101.016 90)
     (fp_text reference "" (at 0 0 90) (layer F.SilkS)
       (effects (font (size 1.524 1.524) (thickness 0.15)))
     )
@@ -864,16 +864,16 @@
   )
 
   (module "MBv3 potentiometers:TRIM1" (layer F.Cu) (tedit 59787A96) (tstamp 5FBD9D87)
-    (at -12.507 99.041)
+    (at 90.348 87.3 90)
     (descr "<b>Bourns 3362p</b>\n<p>\n<a href=\"http://www.taydaelectronics.com/potentiometer-variable-resistors/cermet-potentiometers/3362p.html\">http://www.taydaelectronics.com/potentiometer-variable-resistors/cermet-potentiometers/3362p.html</a>")
     (path /5FB9282A/5FC05753)
-    (fp_text reference RV2 (at 0 2.667) (layer F.SilkS)
+    (fp_text reference RV2 (at 0 2.667 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 5K (at 0 2.7305) (layer F.SilkS) hide
+    (fp_text value 5K (at 0 2.7305 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user 1 (at -3.302 -2.159) (layer F.SilkS)
+    (fp_text user 1 (at -3.302 -2.159 90) (layer F.SilkS)
       (effects (font (size 0.9652 0.9652) (thickness 0.08128)) (justify left bottom))
     )
     (fp_line (start -3.175 3.429) (end 3.175 3.429) (layer F.SilkS) (width 0.1524))
@@ -903,11 +903,11 @@
     (fp_line (start 3.175 -3.429) (end 3.429 -3.175) (layer F.SilkS) (width 0.1524))
     (fp_line (start 3.175 -3.429) (end -3.175 -3.429) (layer F.SilkS) (width 0.1524))
     (fp_circle (center 0 0) (end 1.9715 0) (layer F.SilkS) (width 0.127))
-    (pad 3 thru_hole oval (at 2.54 0) (size 1.9304 1.9304) (drill 1) (layers *.Cu *.Mask)
+    (pad 3 thru_hole oval (at 2.54 0 90) (size 1.9304 1.9304) (drill 1) (layers *.Cu *.Mask)
       (net 68 "Net-(RV2-Pad3)"))
-    (pad 2 thru_hole oval (at 0 -2.54) (size 1.9304 1.9304) (drill 1) (layers *.Cu *.Mask)
+    (pad 2 thru_hole oval (at 0 -2.54 90) (size 1.9304 1.9304) (drill 1) (layers *.Cu *.Mask)
       (net 44 "Net-(J7-PadS)"))
-    (pad 1 thru_hole oval (at -2.54 0) (size 1.9304 1.9304) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole oval (at -2.54 0 90) (size 1.9304 1.9304) (drill 1) (layers *.Cu *.Mask)
       (net 7 GND))
   )
 
@@ -1034,7 +1034,7 @@
   )
 
   (module "MBv3 resistors:0.3_22.B" (layer F.Cu) (tedit 5FB5518B) (tstamp 5FBD9D15)
-    (at -35.732201 103.378)
+    (at 100 89.332)
     (descr "0.3\"  (7.62mm) lead spacing, 1/4W (flat)")
     (path /5FB9282A/5FD87F89)
     (fp_text reference R30 (at 0 0) (layer F.SilkS)
@@ -1293,7 +1293,7 @@
   )
 
   (module "MBv3 resistors:0.3_22.B" (layer F.Cu) (tedit 5FB5518B) (tstamp 5FBD9C7B)
-    (at 93.396 84.76)
+    (at 119.177 92.38)
     (descr "0.3\"  (7.62mm) lead spacing, 1/4W (flat)")
     (path /5FB9282A/5FFBCBAF)
     (fp_text reference R23 (at 0 0) (layer F.SilkS)
@@ -1330,7 +1330,7 @@
   )
 
   (module "MBv3 resistors:0.3_22.B" (layer F.Cu) (tedit 5FB5518B) (tstamp 5FBE1320)
-    (at 93.396 87.3 180)
+    (at 119.177 94.92 180)
     (descr "0.3\"  (7.62mm) lead spacing, 1/4W (flat)")
     (path /5FB9282A/5FFBC7A8)
     (fp_text reference R22 (at 0 0) (layer F.SilkS)
@@ -2892,7 +2892,7 @@
   )
 
   (module "MBv3 diodes:3MM_1" (layer F.Cu) (tedit 599B1EB8) (tstamp 5FBD98BB)
-    (at -16.571699 105.2603)
+    (at 100 85.268 180)
     (path /5FB9282A/5FD8E90A)
     (fp_text reference D4 (at 0 -2.032) (layer F.SilkS)
       (effects (font (size 0.9652 0.9652) (thickness 0.08128)))
@@ -2922,9 +2922,9 @@
     (fp_arc (start -1.8415 -0.444499) (end -2.667 -0.508) (angle 90) (layer F.SilkS) (width 0.127))
     (fp_line (start -2.667 0.508) (end -2.667 -0.508) (layer F.SilkS) (width 0.127))
     (fp_arc (start -1.8415 0.444499) (end -1.778 1.27) (angle 90) (layer F.SilkS) (width 0.127))
-    (pad 1 thru_hole oval (at 1.27 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole oval (at 1.27 0 180) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 21 "Net-(D4-Pad1)"))
-    (pad 2 thru_hole rect (at -1.27 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
+    (pad 2 thru_hole rect (at -1.27 0 180) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 13 +9V))
   )
 
@@ -3084,7 +3084,7 @@
   )
 
   (module "MBv3 caps-elec:0504" (layer F.Cu) (tedit 5FBD2865) (tstamp 5FBD9836)
-    (at 103.175 87.3)
+    (at 112.192 87.3)
     (descr "0.2\" (5.08mm) spacing")
     (path /5FB9282A/5FFBCF7B)
     (fp_text reference C8 (at 0 0) (layer F.SilkS)
@@ -3103,7 +3103,7 @@
   )
 
   (module "MBv3 caps-elec:0633" (layer F.Cu) (tedit 5FBD2888) (tstamp 5FBD982D)
-    (at 113.335 87.3 180)
+    (at 120.32 87.3 180)
     (descr "0.2\" (5.08mm) spacing")
     (path /5FB9282A/5FFBBC14)
     (fp_text reference C7 (at 0 0) (layer F.SilkS)
