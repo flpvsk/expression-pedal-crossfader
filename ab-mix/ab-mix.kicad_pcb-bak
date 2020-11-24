@@ -2278,7 +2278,7 @@
   )
 
   (module pedal-component-footprint:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal (layer F.Cu) (tedit 5FBD317F) (tstamp 5FBDD345)
-    (at 139.5 102.5)
+    (at 139.5 102)
     (descr "M Series, 6.35mm (1/4in) stereo jack, switched, with chrome ferrule and offset PCB pins, https://www.neutrik.com/en/product/nmj6hcd3")
     (tags "neutrik jack m")
     (path /5FB9282A/600D2BC1)
@@ -2343,7 +2343,7 @@
   )
 
   (module pedal-component-footprint:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal (layer F.Cu) (tedit 5FBD317F) (tstamp 5FBDD3C3)
-    (at 139.5 81.3)
+    (at 139.5 81.8)
     (descr "M Series, 6.35mm (1/4in) stereo jack, switched, with chrome ferrule and offset PCB pins, https://www.neutrik.com/en/product/nmj6hcd3")
     (tags "neutrik jack m")
     (path /5FB9282A/600D1654)

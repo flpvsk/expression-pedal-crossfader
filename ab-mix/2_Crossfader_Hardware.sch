@@ -57,8 +57,8 @@ L Device:R_US R?
 U 1 1 5FBBC917
 P 8700 2150
 AR Path="/5FBBC917" Ref="R?"  Part="1" 
-AR Path="/5FB9282A/5FBBC917" Ref="R30"  Part="1" 
-F 0 "R30" V 8495 2150 50  0000 C CNN
+AR Path="/5FB9282A/5FBBC917" Ref="R31"  Part="1" 
+F 0 "R31" V 8495 2150 50  0000 C CNN
 F 1 "10k" V 8586 2150 50  0000 C CNN
 F 2 "MBv3 resistors:0.3_22.B" V 8740 2140 50  0001 C CNN
 F 3 "~" H 8700 2150 50  0001 C CNN
@@ -92,7 +92,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 5525 1775 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Text GLabel 4500 1750 0    50   Input ~ 0
-9V
++9V
 Text GLabel 6200 1150 2    50   Input ~ 0
 CI
 Wire Wire Line
@@ -117,7 +117,7 @@ Wire Wire Line
 Wire Wire Line
 	8300 1550 8300 1475
 Text GLabel 8300 1025 2    50   Input ~ 0
-4V5
++4V5
 Wire Wire Line
 	8300 1025 8300 1175
 Wire Wire Line
@@ -220,17 +220,6 @@ Connection ~ 4675 1950
 Wire Wire Line
 	4675 1950 4775 1950
 $Comp
-L Connector:Jack-DC J3
-U 1 1 5FFB5064
-P 1250 6725
-F 0 "J3" H 1021 6683 50  0000 R CNN
-F 1 "Jack-DC" H 1021 6774 50  0000 R CNN
-F 2 "" H 1300 6685 50  0001 C CNN
-F 3 "~" H 1300 6685 50  0001 C CNN
-	1    1250 6725
-	1    0    0    1   
-$EndComp
-$Comp
 L Diode:1N4001 D3
 U 1 1 5FFBA808
 P 2125 6875
@@ -287,10 +276,8 @@ F 3 "~" H 3625 7150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1900 6625 1900 6400
-Wire Wire Line
-	1550 6625 1650 6625
 Text GLabel 4000 6400 2    50   Input ~ 0
-9V
++9V
 Wire Wire Line
 	1900 6400 2125 6400
 Wire Wire Line
@@ -328,12 +315,10 @@ Connection ~ 3175 6875
 Wire Wire Line
 	3175 6875 3175 7000
 Text GLabel 4000 6875 2    50   Input ~ 0
-4V5
++4V5
 Wire Wire Line
 	3625 6875 4000 6875
 Connection ~ 3625 6875
-Wire Wire Line
-	1550 6825 1650 6825
 Wire Wire Line
 	1900 6825 1900 7400
 Connection ~ 1900 7400
@@ -396,7 +381,7 @@ P 1500 1750
 AR Path="/5FBC1F48/5FFE151C" Ref="RV?"  Part="1" 
 AR Path="/5FB9282A/5FFE151C" Ref="RV1"  Part="1" 
 F 0 "RV1" V 1385 1750 50  0000 C CNN
-F 1 "R_POT_TRIM" V 1294 1750 50  0000 C CNN
+F 1 "10K" V 1294 1750 50  0000 C CNN
 F 2 "MBv3 potentiometers:TRIM1" H 1500 1750 50  0001 C CNN
 F 3 "~" H 1500 1750 50  0001 C CNN
 	1    1500 1750
@@ -489,10 +474,10 @@ Crossfader
 Text Notes 675  6150 0    157  ~ 0
 Power
 $Comp
-L Device:R R31
+L Device:R R32
 U 1 1 6005735F
 P 9900 1650
-F 0 "R31" V 9693 1650 50  0000 C CNN
+F 0 "R32" V 9693 1650 50  0000 C CNN
 F 1 "1K" V 9784 1650 50  0000 C CNN
 F 2 "MBv3 resistors:0.3_22.B" V 9830 1650 50  0001 C CNN
 F 3 "~" H 9900 1650 50  0001 C CNN
@@ -500,10 +485,10 @@ F 3 "~" H 9900 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_POT RV2
+L Device:R_POT RV3
 U 1 1 60057F9B
 P 10300 1900
-F 0 "RV2" H 10231 1854 50  0000 R CNN
+F 0 "RV3" H 10231 1854 50  0000 R CNN
 F 1 "R_POT" H 10231 1945 50  0000 R CNN
 F 2 "MBv3 potentiometers:16MM_B.MOUNT" H 10300 1900 50  0001 C CNN
 F 3 "~" H 10300 1900 50  0001 C CNN
@@ -519,10 +504,10 @@ Wire Wire Line
 Wire Wire Line
 	10450 1900 10750 1900
 $Comp
-L power:GND #PWR019
+L power:GND #PWR024
 U 1 1 6006D7D6
 P 10300 2150
-F 0 "#PWR019" H 10300 1900 50  0001 C CNN
+F 0 "#PWR024" H 10300 1900 50  0001 C CNN
 F 1 "GND" H 10305 1977 50  0000 C CNN
 F 2 "" H 10300 2150 50  0001 C CNN
 F 3 "" H 10300 2150 50  0001 C CNN
@@ -549,10 +534,10 @@ NoConn ~ 5525 2800
 NoConn ~ 5525 2900
 NoConn ~ 6125 2800
 $Comp
-L power:GND #PWR017
+L power:GND #PWR020
 U 1 1 6008DB07
 P 6275 2775
-F 0 "#PWR017" H 6275 2525 50  0001 C CNN
+F 0 "#PWR020" H 6275 2525 50  0001 C CNN
 F 1 "GND" H 6280 2602 50  0000 C CNN
 F 2 "" H 6275 2775 50  0001 C CNN
 F 3 "" H 6275 2775 50  0001 C CNN
@@ -607,10 +592,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 6500 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR018
+L power:GND #PWR021
 U 1 1 600A6E01
 P 6700 3200
-F 0 "#PWR018" H 6700 2950 50  0001 C CNN
+F 0 "#PWR021" H 6700 2950 50  0001 C CNN
 F 1 "GND" H 6705 3027 50  0000 C CNN
 F 2 "" H 6700 3200 50  0001 C CNN
 F 3 "" H 6700 3200 50  0001 C CNN
@@ -620,7 +605,7 @@ $EndComp
 Wire Wire Line
 	6700 3200 6700 3075
 Text GLabel 6600 2425 0    50   Input ~ 0
-9V
++9V
 Wire Wire Line
 	6600 2425 6700 2425
 Wire Wire Line
@@ -686,225 +671,403 @@ $EndComp
 Wire Wire Line
 	1500 3325 1500 3225
 Text GLabel 1425 2500 0    50   Input ~ 0
-9V
++9V
 Wire Wire Line
 	1425 2500 1500 2500
 Wire Wire Line
 	1500 2500 1500 2625
 $Comp
-L Connector:AudioJack3 J1
+L Connector:AudioJack3_Switch J1
 U 1 1 600CC9C6
 P 1150 4325
-F 0 "J1" H 1132 4650 50  0000 C CNN
-F 1 "IN" H 1132 4559 50  0000 C CNN
-F 2 "" H 1150 4325 50  0001 C CNN
+F 0 "J1" H 900 4650 50  0000 C CNN
+F 1 "IN" H 1150 4650 50  0000 C CNN
+F 2 "pedal-component-footprint:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal" H 1150 4325 50  0001 C CNN
 F 3 "~" H 1150 4325 50  0001 C CNN
 	1    1150 4325
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack3 J2
+L Connector:AudioJack3_Switch J2
 U 1 1 600CE085
-P 1150 4950
-F 0 "J2" H 1132 5275 50  0000 C CNN
-F 1 "Out" H 1132 5184 50  0000 C CNN
-F 2 "" H 1150 4950 50  0001 C CNN
-F 3 "~" H 1150 4950 50  0001 C CNN
-	1    1150 4950
+P 1150 5425
+F 0 "J2" H 925 5750 50  0000 C CNN
+F 1 "Out" H 1150 5750 50  0000 C CNN
+F 2 "pedal-component-footprint:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal" H 1150 5425 50  0001 C CNN
+F 3 "~" H 1150 5425 50  0001 C CNN
+	1    1150 5425
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack3 J4
+L Connector:AudioJack3_Switch J3
 U 1 1 600CFEF5
-P 1950 4325
-F 0 "J4" H 1932 4650 50  0000 C CNN
-F 1 "Send1" H 1932 4559 50  0000 C CNN
-F 2 "" H 1950 4325 50  0001 C CNN
-F 3 "~" H 1950 4325 50  0001 C CNN
-	1    1950 4325
+P 2475 4325
+F 0 "J3" H 2225 4650 50  0000 C CNN
+F 1 "Send1" H 2475 4650 50  0000 C CNN
+F 2 "pedal-component-footprint:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal" H 2475 4325 50  0001 C CNN
+F 3 "~" H 2475 4325 50  0001 C CNN
+	1    2475 4325
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack3 J5
+L Connector:AudioJack3_Switch J4
 U 1 1 600D03A0
-P 1950 4950
-F 0 "J5" H 1725 5200 50  0000 C CNN
-F 1 "Return1" H 1932 5184 50  0000 C CNN
-F 2 "" H 1950 4950 50  0001 C CNN
-F 3 "~" H 1950 4950 50  0001 C CNN
-	1    1950 4950
+P 2475 5425
+F 0 "J4" H 2225 5725 50  0000 C CNN
+F 1 "Return1" H 2475 5725 50  0000 C CNN
+F 2 "pedal-component-footprint:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal" H 2475 5425 50  0001 C CNN
+F 3 "~" H 2475 5425 50  0001 C CNN
+	1    2475 5425
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack3 J6
+L Connector:AudioJack3_Switch J5
 U 1 1 600D1654
-P 2675 4325
-F 0 "J6" H 2657 4650 50  0000 C CNN
-F 1 "Send2" H 2657 4559 50  0000 C CNN
-F 2 "" H 2675 4325 50  0001 C CNN
-F 3 "~" H 2675 4325 50  0001 C CNN
-	1    2675 4325
+P 3800 4325
+F 0 "J5" H 3575 4650 50  0000 C CNN
+F 1 "Send2" H 3850 4650 50  0000 C CNN
+F 2 "pedal-component-footprint:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal" H 3800 4325 50  0001 C CNN
+F 3 "~" H 3800 4325 50  0001 C CNN
+	1    3800 4325
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack3 J7
+L Connector:AudioJack3_Switch J6
 U 1 1 600D2BC1
-P 2675 4950
-F 0 "J7" H 2450 5200 50  0000 C CNN
-F 1 "Return2" H 2657 5184 50  0000 C CNN
-F 2 "" H 2675 4950 50  0001 C CNN
-F 3 "~" H 2675 4950 50  0001 C CNN
-	1    2675 4950
+P 3800 5425
+F 0 "J6" H 3550 5725 50  0000 C CNN
+F 1 "Return2" H 3825 5725 50  0000 C CNN
+F 2 "pedal-component-footprint:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal" H 3800 5425 50  0001 C CNN
+F 3 "~" H 3800 5425 50  0001 C CNN
+	1    3800 5425
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack3 J8
+L Connector:AudioJack3_Switch J7
 U 1 1 600D3807
-P 3350 4950
-F 0 "J8" H 3332 5275 50  0000 C CNN
-F 1 "Exp" H 3332 5184 50  0000 C CNN
-F 2 "" H 3350 4950 50  0001 C CNN
-F 3 "~" H 3350 4950 50  0001 C CNN
-	1    3350 4950
+P 5125 5425
+F 0 "J7" H 4900 5750 50  0000 C CNN
+F 1 "Exp" H 5125 5750 50  0000 C CNN
+F 2 "pedal-component-footprint:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal" H 5125 5425 50  0001 C CNN
+F 3 "~" H 5125 5425 50  0001 C CNN
+	1    5125 5425
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 4850 1650 4850
-Wire Wire Line
-	1650 4850 1650 5625
-Wire Wire Line
-	1650 5625 2375 5625
-Wire Wire Line
-	2375 4850 2150 4850
-Wire Wire Line
-	2375 5625 3050 5625
-Wire Wire Line
-	3050 5625 3050 4850
-Wire Wire Line
-	3050 4850 2875 4850
-Connection ~ 2375 5625
-Wire Wire Line
-	3050 5625 3900 5625
-Wire Wire Line
-	3900 5625 3900 4850
-Wire Wire Line
-	3900 4850 3550 4850
-Connection ~ 3050 5625
-Wire Wire Line
-	1350 4225 1650 4225
-Wire Wire Line
-	1650 4225 1650 4850
-Connection ~ 1650 4850
-Wire Wire Line
-	2150 4225 2375 4225
-Wire Wire Line
-	2375 4225 2375 4850
-Connection ~ 2375 4850
-Wire Wire Line
-	2375 4850 2375 5625
-Wire Wire Line
-	2875 4225 3050 4225
-Wire Wire Line
-	3050 4225 3050 4850
-Connection ~ 3050 4850
-Text GLabel 1425 4625 0    50   Input ~ 0
-IN
-Wire Wire Line
-	1425 4625 1550 4625
-Wire Wire Line
-	1550 4625 1550 4325
-Wire Wire Line
-	1550 4325 1450 4325
-Wire Wire Line
-	1350 4425 1450 4425
-Wire Wire Line
-	1450 4425 1450 4325
-Connection ~ 1450 4325
-Wire Wire Line
-	1450 4325 1350 4325
-Text GLabel 1425 5250 0    50   Input ~ 0
-OUT
-Wire Wire Line
-	1425 5250 1550 5250
-Wire Wire Line
-	1550 5250 1550 4950
-Wire Wire Line
-	1550 4950 1450 4950
-Wire Wire Line
-	1350 5050 1450 5050
-Wire Wire Line
-	1450 5050 1450 4950
-Connection ~ 1450 4950
-Wire Wire Line
-	1450 4950 1350 4950
-Text GLabel 2225 4625 0    50   Input ~ 0
-FX_SEND1
-Wire Wire Line
-	2225 4625 2350 4625
-Wire Wire Line
-	2350 4625 2350 4325
-Wire Wire Line
-	2350 4325 2250 4325
-Wire Wire Line
-	2150 4425 2250 4425
-Wire Wire Line
-	2250 4425 2250 4325
-Connection ~ 2250 4325
-Wire Wire Line
-	2250 4325 2150 4325
-Text GLabel 2225 5250 0    50   Input ~ 0
-FX_RETURN1
-Wire Wire Line
-	2225 5250 2350 5250
-Wire Wire Line
-	2350 5250 2350 4950
-Wire Wire Line
-	2350 4950 2250 4950
-Wire Wire Line
-	2150 5050 2250 5050
-Wire Wire Line
-	2250 5050 2250 4950
-Connection ~ 2250 4950
-Wire Wire Line
-	2250 4950 2150 4950
-Text GLabel 2950 4625 0    50   Input ~ 0
-FX_SEND2
-Wire Wire Line
-	2950 4625 3075 4625
-Wire Wire Line
-	3075 4625 3075 4325
-Wire Wire Line
-	3075 4325 2975 4325
-Wire Wire Line
-	2875 4425 2975 4425
-Wire Wire Line
-	2975 4425 2975 4325
-Connection ~ 2975 4325
-Wire Wire Line
-	2975 4325 2875 4325
-Text GLabel 2950 5250 0    50   Input ~ 0
-FX_RETURN2
-Wire Wire Line
-	2950 5250 3075 5250
-Wire Wire Line
-	3075 5250 3075 4950
-Wire Wire Line
-	3075 4950 2975 4950
-Wire Wire Line
-	2875 5050 2975 5050
-Wire Wire Line
-	2975 5050 2975 4950
-Connection ~ 2975 4950
-Wire Wire Line
-	2975 4950 2875 4950
-Text GLabel 3700 4950 2    50   Input ~ 0
-9V
-Wire Wire Line
-	3550 4950 3700 4950
-Text GLabel 3700 5050 2    50   Input ~ 0
-CV
-Wire Wire Line
-	3550 5050 3700 5050
 Text Notes 675  3850 0    157  ~ 0
 Jacks
+Wire Wire Line
+	1350 4225 1500 4225
+Wire Wire Line
+	1500 4225 1500 4125
+Wire Wire Line
+	1500 4125 1350 4125
+Wire Wire Line
+	1500 4125 1500 3925
+Wire Wire Line
+	1500 3925 2825 3925
+Wire Wire Line
+	2825 3925 2825 4125
+Wire Wire Line
+	2825 4125 2675 4125
+Connection ~ 1500 4125
+Wire Wire Line
+	2825 4125 2825 4225
+Wire Wire Line
+	2825 4225 2675 4225
+Connection ~ 2825 4125
+Wire Wire Line
+	2825 3925 4150 3925
+Wire Wire Line
+	4150 3925 4150 4125
+Wire Wire Line
+	4150 4225 4000 4225
+Connection ~ 2825 3925
+Wire Wire Line
+	4000 4125 4150 4125
+Connection ~ 4150 4125
+Wire Wire Line
+	4150 4125 4150 4225
+$Comp
+L power:GND #PWR017
+U 1 1 5FBE403D
+P 4575 4250
+F 0 "#PWR017" H 4575 4000 50  0001 C CNN
+F 1 "GND" H 4580 4077 50  0000 C CNN
+F 2 "" H 4575 4250 50  0001 C CNN
+F 3 "" H 4575 4250 50  0001 C CNN
+	1    4575 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4225 4575 4225
+Wire Wire Line
+	4575 4225 4575 4250
+Connection ~ 4150 4225
+Wire Wire Line
+	1350 5325 1500 5325
+Wire Wire Line
+	1500 5325 1500 5225
+Wire Wire Line
+	1500 5225 1350 5225
+Wire Wire Line
+	1500 5225 1500 5025
+Wire Wire Line
+	1500 5025 2825 5025
+Wire Wire Line
+	2825 5025 2825 5225
+Wire Wire Line
+	2825 5325 2675 5325
+Connection ~ 1500 5225
+Wire Wire Line
+	2675 5225 2825 5225
+Connection ~ 2825 5225
+Wire Wire Line
+	2825 5225 2825 5325
+Wire Wire Line
+	2825 5025 4150 5025
+Wire Wire Line
+	4150 5025 4150 5225
+Wire Wire Line
+	4150 5325 4000 5325
+Connection ~ 2825 5025
+Wire Wire Line
+	4000 5225 4150 5225
+Connection ~ 4150 5225
+Wire Wire Line
+	4150 5225 4150 5325
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5FBFDDE3
+P 6025 5725
+F 0 "H5" V 5979 5875 50  0000 L CNN
+F 1 "CV_DEFAULT" V 6070 5875 50  0000 L CNN
+F 2 "pedal-component-footprint:PinHeader_1x01_P2.54mm_Vertical_Front_Back" H 6025 5725 50  0001 C CNN
+F 3 "~" H 6025 5725 50  0001 C CNN
+	1    6025 5725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5325 5725 5925 5725
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5FC05753
+P 6075 5225
+AR Path="/5FBC1F48/5FC05753" Ref="RV?"  Part="1" 
+AR Path="/5FB9282A/5FC05753" Ref="RV2"  Part="1" 
+F 0 "RV2" V 5960 5225 50  0000 C CNN
+F 1 "5K" V 5869 5225 50  0000 C CNN
+F 2 "MBv3 potentiometers:TRIM1" H 6075 5225 50  0001 C CNN
+F 3 "~" H 6075 5225 50  0001 C CNN
+	1    6075 5225
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5FC13742
+P 6075 5425
+F 0 "#PWR019" H 6075 5175 50  0001 C CNN
+F 1 "GND" H 6080 5252 50  0000 C CNN
+F 2 "" H 6075 5425 50  0001 C CNN
+F 3 "" H 6075 5425 50  0001 C CNN
+	1    6075 5425
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6075 5075
+Wire Wire Line
+	5325 5225 5925 5225
+Wire Wire Line
+	6075 5425 6075 5375
+NoConn ~ 5325 5325
+NoConn ~ 5325 5525
+Text GLabel 5750 5425 2    50   Input ~ 0
++9V
+Wire Wire Line
+	5325 5425 5750 5425
+Text GLabel 5750 5625 2    50   Input ~ 0
+CV
+Wire Wire Line
+	5325 5625 5750 5625
+NoConn ~ 1350 4325
+NoConn ~ 1350 4425
+NoConn ~ 2675 4325
+NoConn ~ 2675 4425
+NoConn ~ 4000 4325
+NoConn ~ 4000 4425
+NoConn ~ 4000 5425
+NoConn ~ 4000 5525
+NoConn ~ 2675 5425
+NoConn ~ 2675 5525
+NoConn ~ 1350 5425
+NoConn ~ 1350 5525
+NoConn ~ 1350 4625
+$Comp
+L power:GND #PWR018
+U 1 1 5FC7CA41
+P 4575 5350
+F 0 "#PWR018" H 4575 5100 50  0001 C CNN
+F 1 "GND" H 4580 5177 50  0000 C CNN
+F 2 "" H 4575 5350 50  0001 C CNN
+F 3 "" H 4575 5350 50  0001 C CNN
+	1    4575 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5325 4575 5325
+Wire Wire Line
+	4575 5325 4575 5350
+Connection ~ 4150 5325
+NoConn ~ 2675 4625
+NoConn ~ 4000 4625
+NoConn ~ 1350 5725
+NoConn ~ 2675 5725
+NoConn ~ 4000 5725
+Text GLabel 1600 4525 2    50   Input ~ 0
+JACK_IN
+Wire Wire Line
+	1350 4525 1600 4525
+Text GLabel 2850 4525 2    50   Input ~ 0
+FX_SEND1
+Wire Wire Line
+	2675 4525 2850 4525
+Text GLabel 4200 4525 2    50   Input ~ 0
+FX_SEND2
+Wire Wire Line
+	4000 4525 4200 4525
+Text GLabel 2850 5625 2    50   Input ~ 0
+FX_RETURN1
+Wire Wire Line
+	2675 5625 2850 5625
+Text GLabel 4200 5625 2    50   Input ~ 0
+FX_RETURN2
+Wire Wire Line
+	4000 5625 4200 5625
+Text GLabel 1600 5625 2    50   Input ~ 0
+JACK_OUT
+Wire Wire Line
+	1350 5625 1600 5625
+$Comp
+L Switch:SW_Push_3PDT SW2
+U 1 1 5FCF9E1A
+P 7850 5050
+F 0 "SW2" H 7850 5735 50  0000 C CNN
+F 1 "Bypass" H 7850 5644 50  0000 C CNN
+F 2 "pedal-component-footprint:3PDT.LUGS.FLPVSK" H 7850 5410 50  0001 C CNN
+F 3 "~" H 7850 5410 50  0001 C CNN
+	1    7850 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 8700 4950 2    50   Input ~ 0
+JACK_IN
+Wire Wire Line
+	8050 4950 8650 4950
+Wire Wire Line
+	8050 5550 8650 5550
+Wire Wire Line
+	8650 5550 8650 4950
+Connection ~ 8650 4950
+Wire Wire Line
+	8650 4950 8700 4950
+Text GLabel 7500 5450 0    50   Input ~ 0
+JACK_OUT
+Wire Wire Line
+	7500 5450 7650 5450
+$Comp
+L power:GND #PWR022
+U 1 1 5FD20E93
+P 7350 4700
+F 0 "#PWR022" H 7350 4450 50  0001 C CNN
+F 1 "GND" H 7355 4527 50  0000 C CNN
+F 2 "" H 7350 4700 50  0001 C CNN
+F 3 "" H 7350 4700 50  0001 C CNN
+	1    7350 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4700 7350 4650
+Wire Wire Line
+	7350 4650 7650 4650
+$Comp
+L power:GND #PWR023
+U 1 1 5FD271AA
+P 8225 4750
+F 0 "#PWR023" H 8225 4500 50  0001 C CNN
+F 1 "GND" H 8230 4577 50  0000 C CNN
+F 2 "" H 8225 4750 50  0001 C CNN
+F 3 "" H 8225 4750 50  0001 C CNN
+	1    8225 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5150 8100 5150
+Wire Wire Line
+	8100 5150 8100 4750
+Wire Wire Line
+	8050 4750 8100 4750
+Connection ~ 8100 4750
+Wire Wire Line
+	8100 4750 8225 4750
+Text GLabel 8250 5350 2    50   Input ~ 0
+OUT
+Wire Wire Line
+	8050 5350 8250 5350
+Text GLabel 7500 5050 0    50   Input ~ 0
+IN
+Wire Wire Line
+	7500 5050 7650 5050
+$Comp
+L Device:R R30
+U 1 1 5FD87F89
+P 8350 4550
+F 0 "R30" V 8143 4550 50  0000 C CNN
+F 1 "Rled" V 8234 4550 50  0000 C CNN
+F 2 "MBv3 resistors:0.3_22.B" V 8280 4550 50  0001 C CNN
+F 3 "~" H 8350 4550 50  0001 C CNN
+	1    8350 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5FD8E90A
+P 8825 4550
+F 0 "D4" H 8818 4766 50  0000 C CNN
+F 1 "Bypass" H 8818 4675 50  0000 C CNN
+F 2 "MBv3 diodes:3MM_1" H 8825 4550 50  0001 C CNN
+F 3 "~" H 8825 4550 50  0001 C CNN
+	1    8825 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4550 8200 4550
+Wire Wire Line
+	8500 4550 8675 4550
+Text GLabel 9175 4550 2    50   Input ~ 0
++9V
+Wire Wire Line
+	8975 4550 9175 4550
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5FDB39CA
+P 1100 6625
+F 0 "H3" V 1100 6825 50  0000 C CNN
+F 1 "9V" V 1250 6675 50  0000 C CNN
+F 2 "pedal-component-footprint:PinHeader_1x01_P2.54mm_Vertical_Front_Back" H 1100 6625 50  0001 C CNN
+F 3 "~" H 1100 6625 50  0001 C CNN
+	1    1100 6625
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 6625 1650 6625
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5FDBAA13
+P 1100 6825
+F 0 "H4" V 1100 7025 50  0000 C CNN
+F 1 "GND" V 950 6875 50  0000 C CNN
+F 2 "pedal-component-footprint:PinHeader_1x01_P2.54mm_Vertical_Front_Back" H 1100 6825 50  0001 C CNN
+F 3 "~" H 1100 6825 50  0001 C CNN
+	1    1100 6825
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 6825 1650 6825
 $EndSCHEMATC

@@ -264,11 +264,11 @@ Wire Wire Line
 Wire Wire Line
 	2450 4725 2900 4725
 $Comp
-L Switch:SW_Push_3PDT SW2
+L Switch:SW_Push_3PDT SW1
 U 1 1 5FBD9FFB
 P 8350 5650
-F 0 "SW2" H 8350 6335 50  0000 C CNN
-F 1 "SW_Push_3PDT" H 8350 6244 50  0000 C CNN
+F 0 "SW1" H 8350 6335 50  0000 C CNN
+F 1 "Phase" H 8350 6244 50  0000 C CNN
 F 2 "pedal-component-footprint:3PDT.LUGS.FLPVSK" H 8350 6010 50  0001 C CNN
 F 3 "~" H 8350 6010 50  0001 C CNN
 	1    8350 5650
@@ -326,8 +326,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 9550 6050 50  0001 C CNN
 	4    9500 5850
 	1    0    0    1   
 $EndComp
-Text GLabel 9100 6050 3    50   Input ~ 0
-+4V5
 $Comp
 L Device:LED D1
 U 1 1 5FBF70B2
@@ -640,7 +638,7 @@ $Comp
 L Device:R R19
 U 1 1 5FD38FD5
 P 9600 1550
-F 0 "R19" H 9750 1500 50  0000 R CNN
+F 0 "R19" H 9800 1475 50  0000 R CNN
 F 1 "1M" H 9800 1600 50  0000 R CNN
 F 2 "MBv3 resistors:0.3_22.B" V 9530 1550 50  0001 C CNN
 F 3 "~" H 9600 1550 50  0001 C CNN
@@ -725,17 +723,6 @@ F 2 "" H 8050 1200 50  0001 C CNN
 F 3 "" H 8050 1200 50  0001 C CNN
 	1    8050 1200
 	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5FC2D81E
-P 5100 2050
-F 0 "SW1" H 5100 2285 50  0000 C CNN
-F 1 "SW_SPST" H 5100 2194 50  0000 C CNN
-F 2 "MBv3 switches:SPST.WIRE" H 5100 2050 50  0001 C CNN
-F 3 "~" H 5100 2050 50  0001 C CNN
-	1    5100 2050
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5100 1200 5100 1300
@@ -921,8 +908,36 @@ F 3 "" H 4725 7125 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4725 7125 4725 6900
-Text GLabel 4725 6125 1    50   Input ~ 0
-+9V
 Wire Wire Line
 	4725 6125 4725 6300
+Text GLabel 9100 6050 3    50   Input ~ 0
++4V5
+Text GLabel 4725 6125 1    50   Input ~ 0
++9V
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FDD123A
+P 4825 1850
+F 0 "H1" V 5050 1900 50  0000 C CNN
+F 1 "Flip1" V 4975 1900 50  0000 C CNN
+F 2 "pedal-component-footprint:PinHeader_1x01_P2.54mm_Vertical_Front_Back" H 4825 1850 50  0001 C CNN
+F 3 "~" H 4825 1850 50  0001 C CNN
+	1    4825 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FDD1CCA
+P 4825 2250
+F 0 "H2" V 5050 2300 50  0000 C CNN
+F 1 "Flip2" V 4975 2300 50  0000 C CNN
+F 2 "pedal-component-footprint:PinHeader_1x01_P2.54mm_Vertical_Front_Back" H 4825 2250 50  0001 C CNN
+F 3 "~" H 4825 2250 50  0001 C CNN
+	1    4825 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4925 2250 5100 2250
+Wire Wire Line
+	4925 1850 5100 1850
 $EndSCHEMATC
