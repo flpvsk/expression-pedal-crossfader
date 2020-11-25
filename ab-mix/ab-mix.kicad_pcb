@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 20)
+    (drawings 22)
     (tracks 539)
     (zones 0)
     (modules 70)
@@ -3189,10 +3189,10 @@
     (at 114.097 119.939 270)
     (descr "0.2\" (5.08mm) spacing")
     (path /5FBC1F48/5FC78AA4)
-    (fp_text reference C4 (at 0 0 90) (layer F.Fab)
+    (fp_text reference C4 (at 0 0 90) (layer F.SilkS)
       (effects (font (size 1.2065 1.2065) (thickness 0.1524)))
     )
-    (fp_text value 10u (at 0 0 90) (layer F.SilkS)
+    (fp_text value 10u (at 0 0 90) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.15)))
     )
     (fp_line (start -0.9398 -1.3716) (end -1.6002 -1.3716) (layer F.SilkS) (width 0.1524))
@@ -3252,6 +3252,12 @@
       (net 4 "Net-(C2-Pad1)"))
   )
 
+  (gr_text JLCJLCJLCJLC (at 47.752 128.016 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "weather changes\nv1.0\nby @flpvsk" (at 153.924 123.444) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify right))
+  )
   (gr_line (start 117.5 58) (end 149 58) (layer Edge.Cuts) (width 0.05) (tstamp 5FBE101B))
   (gr_line (start 51 58) (end 103.25 58) (layer Edge.Cuts) (width 0.05) (tstamp 5FBE101A))
   (gr_arc (start 115.5 74.25) (end 115.5 75.25) (angle -90) (layer Edge.Cuts) (width 0.05))
