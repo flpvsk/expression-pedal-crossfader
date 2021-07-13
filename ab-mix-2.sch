@@ -155,12 +155,12 @@ Connection ~ 2350 1300
 $Comp
 L Audio:SSI2164 U?
 U 1 1 60F1A098
-P 9250 4150
-F 0 "U?" H 9250 5131 50  0000 C CNN
-F 1 "SSI2164" H 9250 5040 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 10050 4050 50  0001 C CNN
-F 3 "http://www.soundsemiconductor.com/downloads/ssi2164datasheet.pdf" H 9850 3700 50  0001 C CNN
-	1    9250 4150
+P 9750 4150
+F 0 "U?" H 9750 5131 50  0000 C CNN
+F 1 "SSI2164" H 9750 5040 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 10550 4050 50  0001 C CNN
+F 3 "http://www.soundsemiconductor.com/downloads/ssi2164datasheet.pdf" H 10350 3700 50  0001 C CNN
+	1    9750 4150
 	1    0    0    -1  
 $EndComp
 Connection ~ 2550 1300
@@ -543,67 +543,67 @@ $EndComp
 $Comp
 L power:+9V #PWR?
 U 1 1 610F52CD
-P 9250 3150
-F 0 "#PWR?" H 9250 3000 50  0001 C CNN
-F 1 "+9V" H 9265 3323 50  0000 C CNN
-F 2 "" H 9250 3150 50  0001 C CNN
-F 3 "" H 9250 3150 50  0001 C CNN
-	1    9250 3150
+P 9750 3150
+F 0 "#PWR?" H 9750 3000 50  0001 C CNN
+F 1 "+9V" H 9765 3323 50  0000 C CNN
+F 2 "" H 9750 3150 50  0001 C CNN
+F 3 "" H 9750 3150 50  0001 C CNN
+	1    9750 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9250 3150 9250 3350
+	9750 3150 9750 3350
 $Comp
 L power:GND #PWR?
 U 1 1 610F82CD
-P 9350 5050
-F 0 "#PWR?" H 9350 4800 50  0001 C CNN
-F 1 "GND" H 9400 4900 50  0000 C CNN
-F 2 "" H 9350 5050 50  0001 C CNN
-F 3 "" H 9350 5050 50  0001 C CNN
-	1    9350 5050
+P 9850 5050
+F 0 "#PWR?" H 9850 4800 50  0001 C CNN
+F 1 "GND" H 9900 4900 50  0000 C CNN
+F 2 "" H 9850 5050 50  0001 C CNN
+F 3 "" H 9850 5050 50  0001 C CNN
+	1    9850 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 4950 9350 5050
+	9850 4950 9850 5050
 $Comp
 L power:-9V #PWR?
 U 1 1 610FA56E
-P 9250 5050
-F 0 "#PWR?" H 9250 4925 50  0001 C CNN
-F 1 "-9V" H 9300 5200 50  0000 C CNN
-F 2 "" H 9250 5050 50  0001 C CNN
-F 3 "" H 9250 5050 50  0001 C CNN
-	1    9250 5050
+P 9750 5050
+F 0 "#PWR?" H 9750 4925 50  0001 C CNN
+F 1 "-9V" H 9800 5200 50  0000 C CNN
+F 2 "" H 9750 5050 50  0001 C CNN
+F 3 "" H 9750 5050 50  0001 C CNN
+	1    9750 5050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9250 5050 9250 4950
-Text GLabel 8650 3550 0    50   Input ~ 0
+	9750 5050 9750 4950
+Text GLabel 9150 3550 0    50   Input ~ 0
 VCA1_IN
 Wire Wire Line
-	8650 3550 8750 3550
-Text GLabel 9800 3550 2    50   Input ~ 0
+	9150 3550 9250 3550
+Text GLabel 10300 3550 2    50   Input ~ 0
 VCA1_OUT
 Wire Wire Line
-	9750 3550 9800 3550
-Text GLabel 8650 3650 0    50   Input ~ 0
+	10250 3550 10300 3550
+Text GLabel 9150 3650 0    50   Input ~ 0
 VCA1_CTRL
 Wire Wire Line
-	8650 3650 8750 3650
-Text GLabel 8650 3950 0    50   Input ~ 0
+	9150 3650 9250 3650
+Text GLabel 9150 3950 0    50   Input ~ 0
 VCA2_CTRL
 Wire Wire Line
-	8650 3950 8750 3950
-Text GLabel 9800 3850 2    50   Input ~ 0
+	9150 3950 9250 3950
+Text GLabel 10300 3850 2    50   Input ~ 0
 VCA2_OUT
 Wire Wire Line
-	9800 3850 9750 3850
-Text GLabel 8650 3850 0    50   Input ~ 0
+	10300 3850 10250 3850
+Text GLabel 9150 3850 0    50   Input ~ 0
 VCA2_IN
 Wire Wire Line
-	8650 3850 8750 3850
-NoConn ~ 8750 4750
+	9150 3850 9250 3850
+NoConn ~ 9250 4750
 Text GLabel 1000 5800 0    50   Input ~ 0
 LOOP_A_RET
 Text GLabel 1000 7250 0    50   Input ~ 0
@@ -1063,30 +1063,30 @@ Text GLabel 7450 5700 2    50   Input ~ 0
 OUT
 Wire Wire Line
 	7300 5700 7450 5700
-Text GLabel 8650 4250 0    50   Input ~ 0
+Text GLabel 9150 4250 0    50   Input ~ 0
 VCA3_CTRL
 Wire Wire Line
-	8650 4250 8750 4250
-Text GLabel 8650 4550 0    50   Input ~ 0
+	9150 4250 9250 4250
+Text GLabel 9150 4550 0    50   Input ~ 0
 VCA4_CTRL
 Wire Wire Line
-	8650 4550 8750 4550
-Text GLabel 8650 4150 0    50   Input ~ 0
+	9150 4550 9250 4550
+Text GLabel 9150 4150 0    50   Input ~ 0
 VCA3_IN
 Wire Wire Line
-	8650 4150 8750 4150
-Text GLabel 8650 4450 0    50   Input ~ 0
+	9150 4150 9250 4150
+Text GLabel 9150 4450 0    50   Input ~ 0
 VCA4_IN
 Wire Wire Line
-	8650 4450 8750 4450
-Text GLabel 9800 4150 2    50   Input ~ 0
+	9150 4450 9250 4450
+Text GLabel 10300 4150 2    50   Input ~ 0
 VCA3_OUT
 Wire Wire Line
-	9800 4150 9750 4150
-Text GLabel 9800 4450 2    50   Input ~ 0
+	10300 4150 10250 4150
+Text GLabel 10300 4450 2    50   Input ~ 0
 VCA4_OUT
 Wire Wire Line
-	9800 4450 9750 4450
+	10300 4450 10250 4450
 Wire Wire Line
 	2550 1300 3050 1300
 Connection ~ 6850 3700
